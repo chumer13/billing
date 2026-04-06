@@ -24,6 +24,7 @@ const contactInfo = [
     iconName: "Mail",
     label: "Email",
     value: "Info@billingalign.com",
+    href: "mailto:Info@billingalign.com",
     sub: "We respond within 24 hours",
   },
   {
@@ -68,7 +69,16 @@ export function ContactContent() {
                     <Icon className="w-4 h-4 text-teal" />
                   </div>
                   <div>
-                    <p className="text-white text-sm font-medium font-display">{item.value}</p>
+                    {item.href ? (
+                      <a
+                        href={item.href}
+                        className="text-white text-sm font-medium font-display hover:text-teal transition-colors"
+                      >
+                        {item.value}
+                      </a>
+                    ) : (
+                      <p className="text-white text-sm font-medium font-display">{item.value}</p>
+                    )}
                     <p className="text-gray-400 text-xs mt-0.5">{item.sub}</p>
                   </div>
                 </div>
