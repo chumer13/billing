@@ -203,7 +203,7 @@ export function ContactForm() {
 
       <Button type="submit" variant="primary" size="lg" className="w-full" disabled={isSubmitting}>
         <Send className="w-4 h-4" />
-        {isSubmitting ? "Sending..." : "Request My Free Demo"}
+        {isSubmitting ? "Sending..." : "Request a Demo"}
       </Button>
 
       <p className="text-center text-xs text-[#94A3B8]">

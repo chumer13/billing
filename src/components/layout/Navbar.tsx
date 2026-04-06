@@ -130,12 +130,9 @@ export function Navbar() {
 
           {/* Desktop Right */}
           <div className="hidden lg:flex items-center gap-3">
-            <Button variant="ghost" size="sm">
-              Sign In
-            </Button>
-            <Link href="/contact">
+            <Link href="/contact#contact-form">
               <Button variant="primary" size="sm">
-                Get a Free Demo
+                Request a Demo
               </Button>
             </Link>
           </div>
@@ -194,12 +191,9 @@ export function Navbar() {
                 ))}
               </div>
               <div className="mt-auto pt-6 flex flex-col gap-3">
-                <Button variant="ghost" size="md" className="w-full justify-center">
-                  Sign In
-                </Button>
-                <Link href="/contact" onClick={() => setMobileOpen(false)}>
+                <Link href="/contact#contact-form" onClick={() => setMobileOpen(false)}>
                   <Button variant="primary" size="md" className="w-full justify-center">
-                    Get a Free Demo
+                    Request a Demo
                   </Button>
                 </Link>
               </div>

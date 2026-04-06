@@ -57,9 +57,9 @@ export function Hero() {
             </p>
 
             <div className="flex flex-wrap gap-3 mb-8">
-              <Link href="/contact">
+              <Link href="/contact#contact-form">
                 <Button variant="primary" size="lg">
-                  Get a Free Demo
+                  Request a Demo
                   <ArrowRight className="w-4 h-4" />
                 </Button>
               </Link>

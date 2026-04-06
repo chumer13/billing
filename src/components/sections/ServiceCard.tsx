@@ -65,10 +65,10 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
         </ul>
 
         <a
-          href="/contact"
+          href="/contact#contact-form"
           className="inline-flex items-center gap-1.5 text-sm text-[#94A3B8] hover:text-white transition-colors group"
         >
-          Talk to an Expert
+          Request a Demo
           <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
         </a>
       </div>

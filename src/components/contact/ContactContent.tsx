@@ -17,20 +17,20 @@ const contactInfo = [
   {
     iconName: "Phone",
     label: "Phone",
-    value: "1-800-BILALIGN",
+    value: "855 225 4467",
     sub: "Mon–Fri, 8am–6pm CT",
   },
   {
     iconName: "Mail",
     label: "Email",
-    value: "hello@billingalign.com",
+    value: "Info@billingalign.com",
     sub: "We respond within 24 hours",
   },
   {
     iconName: "MapPin",
     label: "Headquarters",
-    value: "Chicago, IL",
-    sub: "Serving practices nationwide",
+    value: "1712 Pioneer Ave, Suite 500",
+    sub: "Cheyenne, WY 82001",
   },
   {
     iconName: "Clock",
@@ -102,8 +102,8 @@ export function ContactContent() {
               <div className="w-12 h-12 rounded-xl bg-teal-muted flex items-center justify-center mx-auto mb-3">
                 <MapPin className="w-6 h-6 text-teal" />
               </div>
-              <p className="text-white text-sm font-medium font-display">Chicago, IL (HQ)</p>
-              <p className="text-gray-400 text-xs mt-1">Serving practices nationwide</p>
+              <p className="text-white text-sm font-medium font-display">1712 Pioneer Ave, Suite 500</p>
+              <p className="text-gray-400 text-xs mt-1">Cheyenne, WY 82001</p>
             </div>
           </div>
         </AnimatedSection>
@@ -113,9 +113,9 @@ export function ContactContent() {
       <AnimatedSection delay={0.1} direction="left" className="lg:col-span-3">
         <Card hover={false} className="p-8">
           <div className="mb-6">
-            <Badge className="mb-3">Free Demo Request</Badge>
+            <Badge className="mb-3">Request a Demo</Badge>
             <h3 className="font-display font-bold text-xl text-white">
-              Request Your Free Revenue Cycle Demo
+              Request Your Revenue Cycle Demo
             </h3>
             <p className="text-gray-400 text-sm mt-1">
               Complete the form below and a billing expert will contact you within 24 hours.

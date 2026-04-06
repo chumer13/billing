@@ -72,10 +72,18 @@ const jsonLd = {
         "Full-service medical billing, revenue cycle management, and practice management solutions for 50+ healthcare specialties.",
       contactPoint: {
         "@type": "ContactPoint",
-        telephone: "1-800-BILALIGN",
+        telephone: "+1-855-225-4467",
         contactType: "sales",
-        email: "hello@billingalign.com",
+        email: "Info@billingalign.com",
         availableLanguage: "English",
+      },
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "1712 Pioneer Ave, Suite 500",
+        addressLocality: "Cheyenne",
+        addressRegion: "WY",
+        postalCode: "82001",
+        addressCountry: "US",
       },
       sameAs: [
         "https://linkedin.com/company/billingalign",

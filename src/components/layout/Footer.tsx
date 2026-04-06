@@ -54,7 +54,7 @@ const footerLinks = {
 const socialLinks = [
   { icon: Globe, href: "https://linkedin.com/company/billingalign", label: "LinkedIn" },
   { icon: X, href: "https://twitter.com/billingalign", label: "Twitter / X" },
-  { icon: Mail, href: "mailto:hello@billingalign.com", label: "Email" },
+  { icon: Mail, href: "mailto:Info@billingalign.com", label: "Email" },
 ];
 
 export function Footer() {
@@ -82,6 +82,12 @@ export function Footer() {
                   <social.icon className="w-3.5 h-3.5" />
                 </a>
               ))}
+            </div>
+            <div className="mt-6 space-y-1 text-sm text-[#94A3B8]">
+              <p>Info@billingalign.com</p>
+              <p>855 225 4467</p>
+              <p>1712 Pioneer Ave, Suite 500</p>
+              <p>Cheyenne, WY 82001</p>
             </div>
           </div>
 
