@@ -43,7 +43,7 @@ export function Hero() {
       <div className="container mx-auto relative z-10 py-20 lg:py-28">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-          {/* Left — Text */}
+          {/* Left ï¿½ Text */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
@@ -73,8 +73,8 @@ export function Hero() {
             </h1>
 
             <p className="text-[#94A3B8] text-[1.0625rem] leading-[1.75] mb-8 max-w-[440px]">
-              BillingAlign handles your entire revenue cycle — from clean claim
-              submission to AR follow-up — so your practice gets paid faster,
+              BillingAlign handles your entire revenue cycle ï¿½ from clean claim
+              submission to AR follow-up ï¿½ so your practice gets paid faster,
               with fewer denials and zero billing headaches.
             </p>
 
@@ -106,7 +106,7 @@ export function Hero() {
             </div>
           </motion.div>
 
-          {/* Right — Dashboard Mockup */}
+          {/* Right ï¿½ Dashboard Mockup */}
           <motion.div
             initial={{ opacity: 0, x: 30, y: 10 }}
             animate={{ opacity: 1, x: 0, y: 0 }}
@@ -131,7 +131,7 @@ export function Hero() {
                 </div>
                 <div className="flex items-center gap-2 px-3 py-1 rounded-md bg-white/[0.04] border border-white/[0.06]">
                   <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                  <span className="text-[#94A3B8] text-[11px] font-mono">Revenue Dashboard — Live</span>
+                  <span className="text-[#94A3B8] text-[11px] font-mono">Revenue Dashboard ï¿½ Live</span>
                 </div>
                 <div className="w-16" />
               </div>
@@ -139,7 +139,7 @@ export function Hero() {
               {/* Dashboard content */}
               <div className="p-5">
 
-                {/* 2×2 Metric grid */}
+                {/* 2ï¿½2 Metric grid */}
                 <div className="grid grid-cols-2 gap-2.5 mb-4">
                   {metrics.map((m, i) => (
                     <motion.div
