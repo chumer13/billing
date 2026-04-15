@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/home/Hero";
-import { TrustBar } from "@/components/home/TrustBar";
 import { Services } from "@/components/home/Services";
 import { WhyUs } from "@/components/home/WhyUs";
 import { HowItWorks } from "@/components/home/HowItWorks";
@@ -35,8 +34,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="section-divider" />
-      <TrustBar />
       <div className="section-divider" />
       <Services />
       <div className="section-divider" />

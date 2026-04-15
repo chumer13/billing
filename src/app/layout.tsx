@@ -15,6 +15,13 @@ const bricolage = Bricolage_Grotesque({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://billingalign.com"),
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   title: {
     template: "%s | BillingAlign",
     default: "BillingAlign — Aligned Billing. Accelerated Revenue.",
