@@ -4,6 +4,7 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { Toaster } from "sonner";
 import "./globals.css";
 
 const bricolage = Bricolage_Grotesque({
@@ -126,6 +127,16 @@ export default function RootLayout({
         <Navbar />
         <main id="main-content">{children}</main>
         <Footer />
+        <Toaster
+          position="top-right"
+          toastOptions={{
+            style: {
+              background: "#0F1E35",
+              border: "1px solid #1E3A5F",
+              color: "#F1F5F9",
+            },
+          }}
+        />
       </body>
     </html>
   );

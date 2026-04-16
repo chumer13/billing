@@ -3,11 +3,11 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Send, AlertCircle, ChevronDown, CheckCircle } from "lucide-react";
+import { Send, AlertCircle, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
-import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "sonner";
 
 const EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
 const EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
@@ -60,8 +60,6 @@ function FieldError({ message }: { message?: string }) {
 }
 
 export function ContactForm() {
-  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
-
   const {
     register,
     handleSubmit,
@@ -89,10 +87,16 @@ export function ContactForm() {
         },
         EMAILJS_PUBLIC_KEY
       );
-      setSubmitStatus("success");
+      toast.success("Form submitted successfully!", {
+        description: "Thank you! We'll be in touch within 24 hours.",
+        duration: 5000,
+      });
       reset();
     } catch {
-      setSubmitStatus("error");
+      toast.error("Something went wrong.", {
+        description: "Please try again or email us directly.",
+        duration: 5000,
+      });
     }
   };
 
@@ -236,18 +240,7 @@ export function ContactForm() {
         {isSubmitting ? "Sending..." : "Request a Demo"}
       </Button>
 
-      {submitStatus === "success" && (
-        <p className="flex items-center justify-center gap-2 text-sm text-teal font-medium">
-          <CheckCircle className="w-4 h-4 shrink-0" />
-          Thank you! We&apos;ll be in touch within 24 hours.
-        </p>
-      )}
-      {submitStatus === "error" && (
-        <p className="flex items-center justify-center gap-2 text-sm text-[#EF4444]">
-          <AlertCircle className="w-4 h-4 shrink-0" />
-          Something went wrong. Please try again or email us directly.
-        </p>
-      )}
+
 
       <p className="text-center text-xs text-[#94A3B8]">
         Response within 24 hours &middot; No commitment required &middot; HIPAA-safe
