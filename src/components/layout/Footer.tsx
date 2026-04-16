@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Globe, X, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const footerLinks = {
   solutions: {
@@ -42,8 +42,6 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Globe, href: "https://linkedin.com/company/billingalign", label: "LinkedIn" },
-  { icon: X, href: "https://twitter.com/billingalign", label: "Twitter / X" },
   { icon: Mail, href: "mailto:Info@billingalign.com", label: "Email" },
 ];
 
