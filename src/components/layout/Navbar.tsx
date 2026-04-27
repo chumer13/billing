@@ -62,7 +62,7 @@ export function Navbar() {
         <div className="container mx-auto h-full flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image src="/logo.svg" alt="BillingAlign" width={220} height={50} priority className="h-11 w-auto" />
+            <Image src="/logo.svg" alt="BillingAlign" width={240} height={52} priority className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
