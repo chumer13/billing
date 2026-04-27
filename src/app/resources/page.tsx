@@ -4,7 +4,7 @@ import { CTABanner } from "@/components/home/CTABanner";
 import { ResourcesContent } from "@/components/resources/ResourcesContent";
 
 export const metadata: Metadata = {
-  title: "RCM Resources — Blog, Case Studies & Code Lookup",
+  title: "RCM Resources | Blog, Case Studies & Code Lookup",
   description:
     "Explore BillingAlign's library of medical billing resources: blog articles, case studies, webinars, downloadable e-books, and a CPT/ICD-10 code lookup tool.",
   keywords: [

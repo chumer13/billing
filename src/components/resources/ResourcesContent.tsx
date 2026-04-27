@@ -122,7 +122,7 @@ const ebooks = [
     title: "RCM KPI Benchmark Report 2026",
     pages: "24 pages",
     description:
-      "Industry benchmarks across 50+ specialties — see how your practice compares on first-pass rate, denial rate, and days in AR.",
+      "Industry benchmarks across 50+ specialties. See how your practice compares on first-pass rate, denial rate, and days in AR.",
   },
 ];
 

@@ -21,7 +21,7 @@ const serviceCards: { title: string; description: string; icon: LucideIcon; acce
   },
   {
     title: "Medical Coding",
-    description: "AAPC/AHIMA certified coders for CPT, ICD-10, and HCPCS across 50+ specialties.",
+    description: "Certified coders for CPT, ICD-10, and HCPCS across 50+ specialties.",
     icon: Code2,
   },
   {

@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Medical Billing & RCM Services",
   description:
-    "Explore BillingAlign's full suite of 21 revenue cycle management and medical billing services — from claim submission and denial management to credentialing and RPA. HIPAA compliant.",
+    "Explore BillingAlign's full suite of 21 revenue cycle management and medical billing services, from claim submission and denial management to credentialing and RPA. HIPAA compliant.",
   keywords: [
     "medical billing services",
     "revenue cycle management",

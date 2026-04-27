@@ -8,21 +8,20 @@ import { Testimonials } from "@/components/home/Testimonials";
 import { CTABanner } from "@/components/home/CTABanner";
 
 export const metadata: Metadata = {
-  title: "BillingAlign — Aligned Billing. Accelerated Revenue.",
+  title: "BillingAlign | Aligned Billing. Accelerated Revenue.",
   description:
-    "BillingAlign provides full-service medical billing, revenue cycle management, and practice management solutions for 50+ healthcare specialties. HIPAA compliant. AAPC certified.",
+    "BillingAlign provides full-service medical billing, revenue cycle management, and practice management solutions for 50+ healthcare specialties. HIPAA compliant.",
   keywords: [
     "medical billing company",
     "revenue cycle management",
     "healthcare billing services",
     "RCM outsourcing",
     "HIPAA compliant billing",
-    "AAPC certified coders",
     "denial management",
     "physician credentialing",
   ],
   openGraph: {
-    title: "BillingAlign — Aligned Billing. Accelerated Revenue.",
+    title: "BillingAlign | Aligned Billing. Accelerated Revenue.",
     description:
       "Full-service medical billing and RCM for 50+ healthcare specialties. 94% first-pass rate. HIPAA compliant.",
     url: "https://billingalign.com",

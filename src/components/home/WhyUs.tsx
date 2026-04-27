@@ -12,8 +12,8 @@ const differentiators = [
     statLabel: "Claim visibility",
   },
   {
-    title: "AAPC-Certified Coders",
-    description: "Every code submitted by credentialed professionals with AAPC and AHIMA certifications.",
+    title: "Certified Coders",
+    description: "Every claim submitted by our credentialed billing and coding professionals.",
     icon: Award,
     stat: "100%",
     statLabel: "Certified staff",
@@ -34,7 +34,7 @@ const differentiators = [
   },
 ];
 
-const badges = ["HIPAA Compliant", "AAPC Certified", "AHIMA Member", "SOC 2 Compliant"];
+const badges = ["HIPAA Compliant", "Certified Coders", "HITECH Compliant"];
 
 export function WhyUs() {
   return (

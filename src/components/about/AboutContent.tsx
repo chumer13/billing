@@ -3,7 +3,7 @@
 import {
   type LucideIcon,
   Eye, Target, ShieldCheck, Handshake, Star,
-  BadgeCheck, Award, Users, TrendingUp, CheckCircle
+  Users, TrendingUp, CheckCircle
 } from "lucide-react";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Card } from "@/components/ui/Card";
@@ -11,7 +11,7 @@ import { Badge } from "@/components/ui/Badge";
 
 const iconMap: Record<string, LucideIcon> = {
   Eye, Target, ShieldCheck, Handshake, Star,
-  BadgeCheck, Award, Users, TrendingUp,
+  Users, TrendingUp,
 };
 
 const values = [
@@ -19,47 +19,35 @@ const values = [
     iconName: "Eye",
     title: "Transparency",
     description:
-      "Every claim, every dollar, every queue — visible to you in real time. We operate without black boxes. Your revenue data belongs to you.",
+      "Every claim, every dollar, every queue is visible to you in real time. No black boxes. Your revenue data belongs to you.",
   },
   {
     iconName: "Target",
     title: "Accuracy",
     description:
-      "Our claim scrubbing engine and AAPC-certified coders ensure every submission is correct the first time. A 94%+ first-pass rate speaks for itself.",
+      "Our claim scrubbing engine and expert coders ensure every submission is correct the first time. A 94%+ first-pass rate speaks for itself.",
   },
   {
     iconName: "ShieldCheck",
     title: "Compliance",
     description:
-      "HIPAA, AAPC, and AHIMA compliance are non-negotiable foundations of our operation — not afterthoughts. Your patients' data is always protected.",
+      "HIPAA compliance is a non-negotiable foundation of everything we do, not an afterthought. Your patients' data is always protected.",
   },
   {
     iconName: "Handshake",
     title: "Partnership",
     description:
-      "We don't see ourselves as a vendor — we're an extension of your practice. Your financial health is our mission.",
+      "We're more than a vendor. We're an extension of your practice. Your financial health is our mission.",
   },
   {
     iconName: "Star",
     title: "Excellence",
     description:
-      "We hold ourselves to the highest standards in every aspect of our work — from coding accuracy to client communication and turnaround times.",
+      "We hold ourselves to the highest standards in every aspect of our work, from coding accuracy to client communication and turnaround times.",
   },
 ];
 
 const credentials = [
-  {
-    iconName: "BadgeCheck",
-    title: "AAPC Certified",
-    description:
-      "Every coder on our team holds active AAPC certification (CPC, COC, or specialty credentials), ensuring coding accuracy and compliance across all specialties.",
-  },
-  {
-    iconName: "Award",
-    title: "AHIMA Credentialed",
-    description:
-      "Our health information professionals hold AHIMA credentials (RHIA, RHIT, CCS), bringing additional depth to our clinical documentation and coding operations.",
-  },
   {
     iconName: "ShieldCheck",
     title: "HIPAA Compliant",
@@ -70,7 +58,7 @@ const credentials = [
     iconName: "Users",
     title: "500+ Practices Served",
     description:
-      "Over the years, we've built a track record of results across 500+ practices and 50+ medical specialties — from solo physicians to multi-site health systems.",
+      "Over the years, we've built a track record of results across 500+ practices and 50+ medical specialties, from solo physicians to multi-site health systems.",
   },
 ];
 
@@ -97,21 +85,21 @@ export function AboutContent() {
               <p className="text-gray-400 text-lg leading-relaxed mb-6">
                 BillingAlign was founded on a simple belief: healthcare providers should
                 spend their time caring for patients, not chasing claims. We built a
-                full-service revenue cycle management firm that combines AAPC-certified
+                full-service revenue cycle management firm that combines certified billing
                 expertise with purpose-built technology to eliminate billing complexity.
               </p>
               <p className="text-gray-400 leading-relaxed mb-6">
                 Our team of billing specialists, certified coders, credentialing experts,
-                and technology engineers work together as an integrated unit — not
+                and technology engineers work together as one integrated unit, not
                 disconnected departments. That&apos;s why our denial rate stays under 3%
-                while the industry average hovers at 5–10%.
+                while the industry average hovers at 5-10%.
               </p>
               <ul className="space-y-3">
                 {[
                   "Founded by healthcare billing veterans with 15+ years experience",
-                  "AAPC and AHIMA certified team members throughout",
                   "Serving 50+ medical specialties across all 50 states",
-                  "HIPAA-compliant operations with SOC 2 security standards",
+                  "Certified coders and credentialing experts on every account",
+                  "HIPAA-compliant operations with rigorous data security standards",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2 text-gray-400 text-sm">
                     <CheckCircle className="w-4 h-4 text-teal shrink-0 mt-0.5" />
@@ -135,7 +123,7 @@ export function AboutContent() {
                 </div>
                 <div className="mt-6 pt-6 border-t border-white/5">
                   <p className="text-gray-400 text-sm leading-relaxed text-center">
-                    These aren&apos;t aspirational targets — they&apos;re the results our clients
+                    These aren&apos;t aspirational targets. They&apos;re the results our clients
                     experience within their first 90 days with BillingAlign.
                   </p>
                 </div>
@@ -156,7 +144,7 @@ export function AboutContent() {
               Our Core Values
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              These five principles guide every decision we make — from how we code a
+              These five principles guide every decision we make, from how we code a
               claim to how we communicate with our clients.
             </p>
           </AnimatedSection>
@@ -193,7 +181,7 @@ export function AboutContent() {
               Built on Certified Expertise
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Our team credentials are not just checkboxes — they are the foundation of
+              Our team credentials are the foundation of
               the trust that 500+ practices place in us every day.
             </p>
           </AnimatedSection>
@@ -221,7 +209,7 @@ export function AboutContent() {
 
           {/* Compliance Badges */}
           <AnimatedSection className="flex flex-wrap justify-center gap-4">
-            {["HIPAA Compliant", "AAPC Certified", "AHIMA Credentialed", "SOC 2 Standards"].map(
+            {["HIPAA Compliant", "HITECH Compliant", "Encrypted Data"].map(
               (badge) => (
                 <div
                   key={badge}
@@ -251,7 +239,7 @@ export function AboutContent() {
               From your first claim submission with BillingAlign, you&apos;ll experience the
               difference: faster payments, fewer denials, and complete visibility into
               your revenue cycle. We back every engagement with our performance
-              commitment — if we don&apos;t deliver results, we work with you until we do.
+              commitment. If we don&apos;t deliver results, we work with you until we do.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-6 glass-card rounded-2xl">
               {promises.map((p) => (

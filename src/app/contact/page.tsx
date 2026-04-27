@@ -3,7 +3,7 @@ import { PageHero } from "@/components/sections/PageHero";
 import { ContactContent } from "@/components/contact/ContactContent";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Request a Demo",
+  title: "Contact Us | Request a Demo",
   description:
     "Contact BillingAlign to request a demo, ask questions about our medical billing services, or speak with a revenue cycle expert. Response within 24 hours.",
   keywords: [
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "free RCM consultation",
   ],
   openGraph: {
-    title: "Contact BillingAlign — Request a Demo",
+    title: "Contact BillingAlign | Request a Demo",
     description:
       "Talk to a revenue cycle expert. Request a demo, no commitment, response within 24 hours.",
     url: "https://billingalign.com/contact",

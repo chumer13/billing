@@ -6,7 +6,7 @@ import { CTABanner } from "@/components/home/CTABanner";
 import { WhoWeServeContent } from "@/components/who-we-serve/WhoWeServeContent";
 
 export const metadata: Metadata = {
-  title: "Who We Serve — Medical Billing for Every Practice",
+  title: "Who We Serve | Medical Billing for Every Practice",
   description:
     "BillingAlign serves small practices, large medical groups, academic institutions, health systems, and 24+ specialties. Tailored RCM solutions for every healthcare organization.",
   keywords: [

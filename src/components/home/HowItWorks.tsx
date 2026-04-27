@@ -21,7 +21,7 @@ const steps = [
   {
     number: "03",
     title: "Watch Revenue Grow",
-    description: "Real-time reporting, faster payments, and fewer denials — all managed by your dedicated team.",
+    description: "Real-time reporting, faster payments, and fewer denials, all managed by your dedicated team.",
     icon: Rocket,
     color: "teal",
   },

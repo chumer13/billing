@@ -80,9 +80,9 @@ export const services: Service[] = [
     category: "clinical",
     categoryLabel: "Clinical Services",
     iconName: "Code2",
-    description: "AAPC and AHIMA certified coders handle CPT, ICD-10, and HCPCS coding for 50+ specialties. We stay current with all coding compliance updates to ensure accurate reimbursement.",
+    description: "Certified coders handle CPT, ICD-10, and HCPCS coding for 50+ specialties. We stay current with all coding compliance updates to ensure accurate reimbursement.",
     bullets: [
-      "AAPC/AHIMA certified coding professionals",
+      "Certified coding professionals",
       "CPT, ICD-10, HCPCS for 50+ specialties",
       "Real-time coding compliance updates",
     ],
@@ -197,11 +197,11 @@ export const services: Service[] = [
     category: "practice-ops",
     categoryLabel: "Practice Operations",
     iconName: "UserPlus",
-    description: "Trained billing and administrative staff available on demand. Full-time or part-time options with zero hiring burden — we handle recruiting, training, and management.",
+    description: "Trained billing and administrative staff available on demand. Full-time or part-time options with zero hiring burden. We handle recruiting, training, and management.",
     bullets: [
       "Pre-trained billing and admin professionals",
       "Full-time or part-time flexible arrangements",
-      "Zero hiring burden — we manage everything",
+      "Zero hiring burden. We manage everything",
     ],
   },
   {

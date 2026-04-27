@@ -59,7 +59,7 @@ const organizationTypes = [
     title: "Academic Institutions",
     badge: "Teaching Hospitals",
     description:
-      "Complex payer mix expertise for academic medical centers and teaching hospitals. We navigate the unique billing challenges of academic practices — including faculty billing, resident supervision modifiers, and complex payer contracts.",
+      "Complex payer mix expertise for academic medical centers and teaching hospitals. We navigate the unique billing challenges of academic practices, including faculty billing, resident supervision modifiers, and complex payer contracts.",
     bullets: [
       "Faculty and resident billing expertise",
       "Complex payer mix management",

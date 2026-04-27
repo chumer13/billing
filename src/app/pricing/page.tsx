@@ -50,7 +50,7 @@ const tiers = [
     popular: true,
     features: [
       "Everything in Essentials, plus:",
-      "AAPC-certified medical coding",
+      "Certified medical coding",
       "Advanced denial management & appeals",
       "AR follow-up & collections",
       "Physician credentialing (2 providers)",
@@ -85,7 +85,7 @@ const tiers = [
 const faqs = [
   {
     q: "How does billing percentage pricing work?",
-    a: "We charge a percentage of the collections we successfully recover for your practice. This means our incentives are aligned with yours — we only succeed when you get paid. The percentage is based on your practice size, specialty, and volume.",
+    a: "We charge a percentage of the collections we successfully recover for your practice. This means our incentives are aligned with yours. We only succeed when you get paid. The percentage is based on your practice size, specialty, and volume.",
   },
   {
     q: "Do you require long-term contracts?",
@@ -101,7 +101,7 @@ const faqs = [
   },
   {
     q: "Is my patient data HIPAA compliant?",
-    a: "Absolutely. HIPAA compliance is foundational to everything we do. All data is encrypted in transit and at rest, our team undergoes annual HIPAA training, and we maintain SOC 2 compliance for additional security assurance.",
+    a: "Absolutely. HIPAA compliance is foundational to everything we do. All data is encrypted in transit and at rest, and our team undergoes annual HIPAA training.",
   },
   {
     q: "What specialties do you cover?",

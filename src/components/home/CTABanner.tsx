@@ -9,7 +9,7 @@ const actions = [
   {
     icon: Phone,
     title: "Call Us",
-    description: "Speak directly with a revenue cycle expert — no wait, no scripts.",
+    description: "Speak directly with a revenue cycle expert. No wait, no scripts.",
     cta: "855-225-4467",
     href: "tel:+18552254467",
     gradient: "from-teal/20 to-emerald-500/10",

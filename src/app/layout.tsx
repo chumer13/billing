@@ -25,10 +25,10 @@ export const metadata: Metadata = {
   },
   title: {
     template: "%s | BillingAlign",
-    default: "BillingAlign — Aligned Billing. Accelerated Revenue.",
+    default: "BillingAlign | Aligned Billing. Accelerated Revenue.",
   },
   description:
-    "BillingAlign provides full-service medical billing, revenue cycle management, and practice management solutions for 50+ healthcare specialties. HIPAA compliant. AAPC certified.",
+    "BillingAlign provides full-service medical billing, revenue cycle management, and practice management solutions for 50+ healthcare specialties. HIPAA compliant.",
   keywords: [
     "medical billing",
     "revenue cycle management",
@@ -45,14 +45,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://billingalign.com",
     siteName: "BillingAlign",
-    title: "BillingAlign — Aligned Billing. Accelerated Revenue.",
+    title: "BillingAlign | Aligned Billing. Accelerated Revenue.",
     description:
       "Full-service medical billing and RCM for 50+ healthcare specialties.",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "BillingAlign — Aligned Billing. Accelerated Revenue.",
+    title: "BillingAlign | Aligned Billing. Accelerated Revenue.",
     description:
       "Full-service medical billing and RCM for 50+ healthcare specialties.",
     images: ["/og-image.png"],
