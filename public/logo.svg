@@ -1,97 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 100" fill="none" role="img" aria-label="BillingAlign logo">
-  <defs>
-    <!-- Hexagon gradients -->
-    <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F2A4A"/>
-      <stop offset="100%" stop-color="#0B1E38"/>
-    </linearGradient>
-    <linearGradient id="hexBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1E5080" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#0D3460" stop-opacity="0.4"/>
-    </linearGradient>
-    <linearGradient id="plusGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00DFC8"/>
-      <stop offset="100%" stop-color="#00C9B1"/>
-    </linearGradient>
-    <linearGradient id="alignGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00C9B1"/>
-      <stop offset="100%" stop-color="#00B0A0"/>
-    </linearGradient>
-    <!-- Drop shadow for hexagon -->
-    <filter id="hexShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00C9B1" flood-opacity="0.15"/>
-    </filter>
-    <!-- Glow filter for plus sign -->
-    <filter id="plusGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="1" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 210" fill="none" role="img" aria-label="BillingAlign logo">
+  <!--
+    BillingAlign — Revenue Cycle Management
+    Hand-crafted SVG replica of the brand logo.
+    Colors:
+      Navy   #0D2242  (hexagon + "Billing" text)
+      Cyan   #1AB9D8  ("Align" text)
+      Gray   #8899AE  (tagline)
+      White  #FFFFFF  (plus sign)
+  -->
 
-  <!-- Hexagon icon: center (55,50), circumradius ~37 -->
-  <g filter="url(#hexShadow)">
-    <path
-      d="M55 13
-         L87 31.5
-         L87 68.5
-         L55 87
-         L23 68.5
-         L23 31.5
-         Z"
-      fill="url(#hexGrad)"
-    />
-    <path
-      d="M55 13
-         L87 31.5
-         L87 68.5
-         L55 87
-         L23 68.5
-         L23 31.5
-         Z"
-      fill="none"
-      stroke="url(#hexBorder)"
-      stroke-width="1.2"
-    />
-    <path
-      d="M55 13 L87 31.5"
-      fill="none"
-      stroke="rgba(255,255,255,0.12)"
-      stroke-width="1"
-      stroke-linecap="round"
-    />
-  </g>
+  <!-- ── Flat-top hexagon (center 90,105 · width 120 · height 145) with r=8 rounded corners ── -->
+  <path
+    d="M 68,33 L 112,33
+       Q 120,33 123,40
+       L 147,98
+       Q 150,105 147,112
+       L 123,171
+       Q 120,178 112,178
+       L 68,178
+       Q 60,178 57,171
+       L 33,112
+       Q 30,105 33,98
+       L 57,40
+       Q 60,33 68,33 Z"
+    fill="#0D2242"
+  />
 
-  <!-- Plus / cross icon: centered at (55,50) -->
-  <g filter="url(#plusGlow)">
-    <rect x="42.5" y="45.4" width="25" height="9.2" rx="2.5" fill="url(#plusGrad)" opacity="0.95"/>
-    <rect x="50.4" y="37.5" width="9.2" height="25" rx="2.5" fill="url(#plusGrad)" opacity="0.95"/>
-  </g>
+  <!-- ── White plus sign (centered at 90,105) ── -->
+  <!-- horizontal bar -->
+  <rect x="69" y="99.5" width="42" height="11" rx="3.5" fill="#FFFFFF"/>
+  <!-- vertical bar -->
+  <rect x="84.5" y="82"  width="11" height="46" rx="3.5" fill="#FFFFFF"/>
 
-  <!-- Wordmark: single text element with tspans — no gap between words -->
+  <!-- ── Wordmark: "Billing" navy + "Align" cyan ── -->
   <text
-    x="113"
-    y="63"
-    font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif"
-    font-weight="700"
-    font-size="44"
-    letter-spacing="-1.5"
-  ><tspan fill="#F1F5F9">Billing</tspan><tspan fill="url(#alignGrad)">Align</tspan></text>
+    x="164"
+    y="124"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="800"
+    font-size="76"
+    letter-spacing="-1"
+  ><tspan fill="#0D2242">Billing</tspan><tspan fill="#1AB9D8">Align</tspan></text>
 
-  <!-- Tagline -->
+  <!-- ── Tagline ── -->
   <text
-    x="114"
-    y="80"
-    font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif"
-    font-weight="500"
-    font-size="11"
-    letter-spacing="3.5"
-    fill="#64748B"
-    text-anchor="start"
+    x="167"
+    y="152"
+    font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="400"
+    font-size="13.5"
+    letter-spacing="4"
+    fill="#8899AE"
   >REVENUE CYCLE MANAGEMENT</text>
 
-  <!-- Subtle teal accent line under wordmark -->
-  <line x1="113" y1="67" x2="270" y2="67" stroke="url(#alignGrad)" stroke-width="1.5" stroke-linecap="round" opacity="0.25"/>
 </svg>
