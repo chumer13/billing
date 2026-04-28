@@ -88,6 +88,7 @@ export function Navbar() {
                 >
                   <Link
                     href={link.href}
+                    onClick={() => setDropdownOpen(false)}
                     className={cn(
                       "flex items-center gap-1 px-3 py-2 text-[0.875rem] font-medium rounded-md transition-all duration-200",
                       isActive ? "text-white bg-white/[0.06]" : "text-[#94A3B8] hover:text-white hover:bg-white/[0.04]"
@@ -108,25 +109,25 @@ export function Navbar() {
                     )}
                   </Link>
 
-                  {/* Mega Dropdown */}
-                  {link.hasDropdown && (
-                    <AnimatePresence>
-                      {dropdownOpen && (
+                  {/* Mega Dropdown — bridge gap so mouseLeave doesn't fire between trigger and panel */}
+                  {link.hasDropdown && dropdownOpen && (
+                    <div className="absolute top-full left-0 w-[360px] pt-3">
+                      <AnimatePresence>
                         <motion.div
                           initial={{ opacity: 0, y: 8, scale: 0.98 }}
                           animate={{ opacity: 1, y: 0, scale: 1 }}
                           exit={{ opacity: 0, y: 4, scale: 0.98 }}
                           transition={{ duration: 0.15, ease: [0.21, 0.47, 0.32, 0.98] }}
-                          className="absolute top-full left-0 mt-3 w-[360px] rounded-2xl overflow-hidden border border-white/[0.08] shadow-[0_24px_64px_rgba(0,0,0,0.6),0_0_0_1px_rgba(0,201,177,0.06)]"
+                          className="rounded-2xl overflow-hidden border border-white/[0.08] shadow-[0_24px_64px_rgba(0,0,0,0.6),0_0_0_1px_rgba(0,201,177,0.06)]"
                           style={{ background: "rgba(10,20,38,0.92)", backdropFilter: "blur(20px)" }}
                         >
-                          {/* Glow accent */}
                           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-teal/40 to-transparent" />
                           <div className="p-3 grid gap-0.5">
                             {solutionsDropdown.map((item) => (
                               <Link
                                 key={item.label}
                                 href={item.href}
+                                onClick={() => setDropdownOpen(false)}
                                 className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-[#94A3B8] hover:text-white hover:bg-white/[0.05] transition-all duration-150 group"
                               >
                                 <div className="w-8 h-8 rounded-lg bg-teal/[0.08] border border-teal/[0.12] flex items-center justify-center shrink-0 group-hover:bg-teal/[0.12] group-hover:border-teal/20 transition-colors">
@@ -142,6 +143,7 @@ export function Navbar() {
                           <div className="mx-3 mb-3 pt-3 border-t border-white/[0.06]">
                             <Link
                               href="/services"
+                              onClick={() => setDropdownOpen(false)}
                               className="group flex items-center gap-1.5 text-sm text-teal hover:text-white transition-colors font-medium px-3 py-2 rounded-lg hover:bg-white/[0.04]"
                             >
                               View all 21 services
@@ -149,8 +151,8 @@ export function Navbar() {
                             </Link>
                           </div>
                         </motion.div>
-                      )}
-                    </AnimatePresence>
+                      </AnimatePresence>
+                    </div>
                   )}
                 </div>
               );
