@@ -80,7 +80,7 @@ export function AboutContent() {
               <Badge className="mb-4">Our Mission</Badge>
               <h2 className="font-display font-bold text-3xl sm:text-4xl text-white mb-6">
                 Aligning Your Billing with{" "}
-                <span className="gradient-text">Your Success</span>
+                <span className="text-violet-400">Your Success</span>
               </h2>
               <p className="text-gray-400 text-lg leading-relaxed mb-6">
                 BillingAlign was founded on a simple belief: healthcare providers should

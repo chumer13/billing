@@ -5,10 +5,10 @@ import { motion, useInView } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const stats = [
-  { value: "94%+", label: "First-Pass Claim Rate", color: "text-teal" },
-  { value: "<3%", label: "Average Denial Rate", color: "text-emerald-400" },
-  { value: "50+", label: "Medical Specialties", color: "text-teal" },
-  { value: "500+", label: "Practices Nationwide", color: "text-indigo-400" },
+  { value: "94%+", label: "First-Pass Claim Rate", color: "text-[#00DFC0]" },
+  { value: "<3%", label: "Average Denial Rate", color: "text-violet-400" },
+  { value: "50+", label: "Medical Specialties", color: "text-amber-400" },
+  { value: "500+", label: "Practices Nationwide", color: "text-sky-400" },
 ];
 
 export function TrustBar() {
@@ -31,18 +31,17 @@ export function TrustBar() {
               initial={{ opacity: 0, y: 12 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: i * 0.1, duration: 0.5, ease: [0.21, 0.47, 0.32, 0.98] }}
-              className="flex flex-col items-center text-center px-6 py-2 group"
+              className="flex flex-col items-center text-center px-6 py-4 group rounded-xl lg:rounded-none hover:bg-white/[0.02] transition-colors duration-200"
             >
               <span className={cn(
-                "font-display font-extrabold leading-none mb-2 tabular-nums",
-                stat.color,
-                "drop-shadow-[0_0_8px_rgba(0,201,177,0.3)]"
+                "font-display font-extrabold leading-none mb-2 tabular-nums transition-all duration-300 group-hover:scale-105",
+                stat.color
               )}
                 style={{ fontSize: "clamp(2.25rem, 4vw, 3rem)" }}
               >
                 {stat.value}
               </span>
-              <span className="text-[#64748B] text-sm font-medium text-center leading-snug">
+              <span className="text-[#64748B] text-sm font-medium text-center leading-snug group-hover:text-[#94A3B8] transition-colors">
                 {stat.label}
               </span>
             </motion.div>

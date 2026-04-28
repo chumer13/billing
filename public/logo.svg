@@ -1,12 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 210" fill="none" role="img" aria-label="BillingAlign logo">
   <!--
     BillingAlign — Revenue Cycle Management
-    Hand-crafted SVG replica of the brand logo.
     Colors:
-      Navy   #0D2242  (hexagon + "Billing" text)
-      Cyan   #1AB9D8  ("Align" text)
-      Gray   #8899AE  (tagline)
-      White  #FFFFFF  (plus sign)
+      Teal   #00DFC0  (hexagon + "Align" text)
+      White  #FFFFFF  (plus sign + "Billing" text)
+      Gray   #94A3B8  (tagline)
   -->
 
   <!-- ── Flat-top hexagon (center 90,105 · width 120 · height 145) with r=8 rounded corners ── -->
@@ -23,7 +21,7 @@
        Q 30,105 33,98
        L 57,40
        Q 60,33 68,33 Z"
-    fill="#0D2242"
+    fill="#00DFC0"
   />
 
   <!-- ── White plus sign (centered at 90,105) ── -->
@@ -40,7 +38,7 @@
     font-weight="800"
     font-size="76"
     letter-spacing="-1"
-  ><tspan fill="#0D2242">Billing</tspan><tspan fill="#1AB9D8">Align</tspan></text>
+  ><tspan fill="#FFFFFF">Billing</tspan><tspan fill="#00DFC0">Align</tspan></text>
 
   <!-- ── Tagline ── -->
   <text

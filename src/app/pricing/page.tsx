@@ -249,14 +249,15 @@ export default function PricingPage() {
                 <Accordion.Item
                   key={i}
                   value={`faq-${i}`}
-                  className="bg-white/[0.03] border border-white/5 rounded-xl overflow-hidden"
+                  className="border border-white/[0.06] rounded-xl overflow-hidden transition-colors duration-200 data-[state=open]:border-teal/20 data-[state=open]:bg-teal/[0.02]"
+                  style={{ background: "rgba(11,22,40,0.6)" }}
                 >
-                  <Accordion.Trigger className="flex items-center justify-between w-full px-6 py-4 text-left text-white text-sm font-medium group">
+                  <Accordion.Trigger className="flex items-center justify-between w-full px-6 py-4 text-left text-white text-sm font-medium group hover:text-teal transition-colors">
                     {faq.q}
-                    <ChevronDown className="w-4 h-4 text-[#94A3B8] shrink-0 ml-4 transition-transform group-data-[state=open]:rotate-180" />
+                    <ChevronDown className="w-4 h-4 text-[#94A3B8] shrink-0 ml-4 transition-transform duration-200 group-data-[state=open]:rotate-180 group-data-[state=open]:text-teal" />
                   </Accordion.Trigger>
-                  <Accordion.Content className="px-6 pb-4 text-sm text-[#94A3B8] leading-[1.7] data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp">
-                    {faq.a}
+                  <Accordion.Content className="px-6 pb-5 text-sm text-[#94A3B8] leading-[1.75] data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp border-t border-white/[0.05]">
+                    <div className="pt-3">{faq.a}</div>
                   </Accordion.Content>
                 </Accordion.Item>
               ))}

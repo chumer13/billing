@@ -107,7 +107,7 @@ export function WhoWeServeContent() {
           const Icon = orgIconMap[org.iconName] ?? Building2;
           return (
             <AnimatedSection key={org.title} delay={i * 0.08}>
-              <div className="group relative rounded-2xl p-7 h-full flex flex-col border border-white/[0.07] overflow-hidden transition-all duration-300 hover:border-white/[0.12] hover:-translate-y-1"
+              <div className="group relative rounded-2xl p-7 h-full flex flex-col border border-white/[0.07] overflow-hidden transition-all duration-300 hover:border-white/[0.12] hover:-translate-y-1 card-border-spin"
                 style={{ background: "rgba(11,22,40,0.8)", backdropFilter: "blur(8px)", boxShadow: "inset 0 1px 0 rgba(255,255,255,0.04)" }}>
                 {/* Top gradient accent */}
                 <div className={`absolute top-0 left-0 right-0 h-px bg-gradient-to-r ${org.gradient} opacity-70 group-hover:opacity-100 transition-opacity`} />
@@ -184,7 +184,7 @@ export function WhoWeServeContent() {
           const Icon = specialtyIconMap[spec.iconName] ?? Stethoscope;
           return (
             <AnimatedSection key={spec.name} delay={(i % 8) * 0.04}>
-              <div className="group relative p-4 rounded-xl border border-white/[0.06] overflow-hidden transition-all duration-200 hover:border-teal/25 hover:-translate-y-0.5 cursor-default"
+              <div className="group relative p-4 rounded-xl border border-white/[0.06] overflow-hidden transition-all duration-200 hover:border-teal/25 hover:-translate-y-0.5 cursor-default card-border-spin"
                 style={{ background: "rgba(11,22,40,0.6)" }}>
                 <div className="absolute inset-0 bg-teal/[0.02] opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
                 <div className="relative flex items-start gap-3">

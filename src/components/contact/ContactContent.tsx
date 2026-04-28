@@ -106,7 +106,8 @@ export function ContactContent() {
 
         {/* Map placeholder */}
         <AnimatedSection delay={0.2}>
-          <div className="glass-card rounded-2xl overflow-hidden h-52 relative flex items-center justify-center">
+          <div className="rounded-2xl overflow-hidden h-52 relative flex items-center justify-center border border-white/[0.07]"
+            style={{ background: "rgba(11,22,40,0.8)" }}>
             <div className="absolute inset-0 dot-grid opacity-50" />
             <div className="relative z-10 text-center">
               <div className="w-12 h-12 rounded-xl bg-teal-muted flex items-center justify-center mx-auto mb-3">

@@ -24,9 +24,9 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
       <div className="absolute inset-0 dot-grid opacity-60" />
       <div className="absolute inset-0 bg-hero-mesh" />
-      <div className="blob blob-teal w-[600px] h-[600px] -top-32 -left-32 animate-glow-pulse" />
-      <div className="blob blob-indigo w-[500px] h-[500px] top-1/4 right-0 animate-glow-pulse" style={{ animationDelay: "1.5s" }} />
-      <div className="blob blob-purple w-[400px] h-[400px] bottom-0 left-1/3 animate-glow-pulse" style={{ animationDelay: "3s" }} />
+      <div className="blob blob-teal w-[700px] h-[700px] -top-32 -left-32 animate-glow-pulse" />
+      <div className="blob blob-violet w-[550px] h-[550px] top-1/4 right-0 animate-glow-pulse" style={{ animationDelay: "1.5s" }} />
+      <div className="blob blob-amber w-[420px] h-[420px] bottom-0 left-1/3 animate-glow-pulse" style={{ animationDelay: "3s" }} />
       <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-navy/80 pointer-events-none" />
 
       <div className="container mx-auto relative z-10 py-20 lg:py-28">
@@ -54,7 +54,7 @@ export function Hero() {
             >
               Aligned Billing.
               <br />
-              <span className="gradient-text">Accelerated Revenue.</span>
+              <span className="text-[#00DFC0]">Accelerated Revenue.</span>
             </h1>
 
             <p className="text-[#94A3B8] text-[1.0625rem] leading-[1.75] mb-8 max-w-[440px]">
@@ -78,12 +78,16 @@ export function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-              {["No long-term contracts", "HIPAA compliant", "Live in 48 hours"].map((item) => (
-                <div key={item} className="flex items-center gap-2">
-                  <div className="w-4 h-4 rounded-full bg-teal/15 border border-teal/30 flex items-center justify-center shrink-0">
-                    <Check className="w-2.5 h-2.5 text-teal" />
+              {[
+                { text: "No long-term contracts", color: "text-[#00DFC0]", bg: "bg-[#00DFC0]/15", border: "border-[#00DFC0]/30" },
+                { text: "HIPAA compliant", color: "text-violet-400", bg: "bg-violet-400/15", border: "border-violet-400/30" },
+                { text: "Live in 48 hours", color: "text-amber-400", bg: "bg-amber-400/15", border: "border-amber-400/30" },
+              ].map((item) => (
+                <div key={item.text} className="flex items-center gap-2">
+                  <div className={`w-4 h-4 rounded-full ${item.bg} border ${item.border} flex items-center justify-center shrink-0`}>
+                    <Check className={`w-2.5 h-2.5 ${item.color}`} />
                   </div>
-                  <span className="text-sm text-[#94A3B8]">{item}</span>
+                  <span className="text-sm text-[#94A3B8]">{item.text}</span>
                 </div>
               ))}
             </div>
@@ -94,7 +98,7 @@ export function Hero() {
             initial={{ opacity: 0, x: 30, y: 10 }}
             animate={{ opacity: 1, x: 0, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2, ease: [0.21, 0.47, 0.32, 0.98] }}
-            className="hidden lg:block relative"
+            className="hidden lg:block relative animate-float"
           >
             <div className="absolute -inset-4 bg-teal/5 rounded-3xl blur-2xl" />
             <div

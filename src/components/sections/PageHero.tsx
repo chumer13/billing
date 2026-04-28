@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { ChevronDown } from "lucide-react";
 
 interface PageHeroProps {
   badge?: string;
@@ -44,6 +45,11 @@ export function PageHero({ badge, title, subtitle }: PageHeroProps) {
             {subtitle}
           </p>
         </AnimatedSection>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-40 animate-bounce">
+        <ChevronDown className="w-4 h-4 text-[#94A3B8]" />
       </div>
     </section>
   );

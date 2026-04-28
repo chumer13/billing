@@ -48,7 +48,7 @@ export function CTABanner() {
       <div className="container mx-auto relative z-10">
         {/* Heading */}
         <AnimatedSection className="text-center mb-14 max-w-2xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-teal/25 bg-teal/[0.06] text-teal text-xs font-semibold tracking-wide uppercase mb-6">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#00DFC0]/25 bg-[#00DFC0]/[0.07] text-[#00DFC0] text-xs font-semibold tracking-wide uppercase mb-6">
             <Zap className="w-3 h-3" />
             Get Started Today
           </div>
@@ -57,7 +57,7 @@ export function CTABanner() {
             style={{ fontSize: "clamp(2rem, 3.5vw, 3rem)", letterSpacing: "-0.03em" }}
           >
             Ready to Stop Leaving{" "}
-            <span className="gradient-text">Money on the Table?</span>
+            <span className="text-[#00DFC0]">Money on the Table?</span>
           </h2>
           <p className="text-[#64748B] text-base leading-[1.7]">
             Join 500+ practices. Reach us the way that works best for you.
@@ -72,7 +72,7 @@ export function CTABanner() {
               <AnimatedSection key={action.title} delay={i * 0.08}>
                 <a
                   href={action.href}
-                  className="group relative flex flex-col rounded-2xl p-7 border border-white/[0.07] overflow-hidden transition-all duration-300 hover:border-white/[0.15] hover:-translate-y-1 h-full"
+                  className="group relative flex flex-col rounded-2xl p-7 border border-white/[0.07] overflow-hidden transition-all duration-300 hover:border-white/[0.15] hover:-translate-y-1 h-full card-border-spin"
                   style={{ background: "rgba(11,22,40,0.85)", backdropFilter: "blur(12px)", boxShadow: "inset 0 1px 0 rgba(255,255,255,0.05)" }}
                 >
                   {/* Top gradient line */}

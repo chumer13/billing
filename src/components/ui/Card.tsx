@@ -11,7 +11,7 @@ export function Card({ className, hover = true, children, ...props }: CardProps)
   return (
     <div
       className={cn(
-        "relative group rounded-2xl p-8 overflow-hidden",
+        "relative group rounded-2xl p-8 overflow-hidden card-border-spin",
         // Base glass surface
         "border border-white/[0.07]",
         hover && "transition-all duration-300 cursor-pointer",

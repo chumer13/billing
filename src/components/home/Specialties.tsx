@@ -27,7 +27,7 @@ export function Specialties() {
     <section className="py-20 bg-[#070E1A]">
       <div className="container mx-auto">
         <AnimatedSection className="mb-10">
-          <p className="text-[0.75rem] font-semibold tracking-[0.12em] uppercase text-teal mb-3">
+          <p className="text-[0.75rem] font-semibold tracking-[0.12em] uppercase text-lime-400 mb-3">
             Specialties
           </p>
           <div className="flex items-end justify-between gap-6 flex-wrap">
@@ -53,8 +53,10 @@ export function Specialties() {
               const Icon = specialtyIconMap[spec.iconName] ?? Stethoscope;
               return (
                 <AnimatedSection key={spec.name} delay={Math.min(i, 4) * 0.04}>
-                  <div className="bg-[#070E1A] flex items-center gap-2.5 px-4 py-3.5 group hover:bg-[#0F1E35] transition-colors duration-200 h-full">
-                    <Icon className="w-4 h-4 text-teal shrink-0" />
+                  <div className="bg-[#070E1A] flex items-center gap-3 px-5 py-4 group hover:bg-[#0F1E35] hover:border-teal/10 transition-all duration-200 h-full cursor-default">
+                    <div className="w-7 h-7 rounded-lg bg-lime-400/[0.07] border border-lime-400/[0.1] flex items-center justify-center shrink-0 group-hover:bg-lime-400/[0.13] group-hover:border-lime-400/20 group-hover:shadow-[0_0_8px_rgba(132,204,22,0.15)] transition-all duration-200">
+                      <Icon className="w-3.5 h-3.5 text-lime-400" />
+                    </div>
                     <span className="text-sm text-[#94A3B8] group-hover:text-white transition-colors truncate">
                       {spec.name}
                     </span>

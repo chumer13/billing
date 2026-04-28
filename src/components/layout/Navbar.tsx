@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -29,6 +28,7 @@ const navLinks = [
   { label: "Solutions", href: "/services", hasDropdown: true },
   { label: "Who We Serve", href: "/who-we-serve" },
   { label: "Pricing", href: "/pricing" },
+  { label: "Resources", href: "/resources" },
   { label: "About", href: "/about" },
 ];
 
@@ -61,8 +61,18 @@ export function Navbar() {
       >
         <div className="container mx-auto h-full flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <Image src="/logo.svg" alt="BillingAlign" width={240} height={52} priority className="h-12 w-auto" />
+          <Link href="/" className="flex items-center h-12" aria-label="BillingAlign">
+            <svg viewBox="0 0 480 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-10 w-auto">
+              {/* Hexagon */}
+              <path d="M22 6 L42 6 Q46 6 48 10 L58 28 Q60 32 58 36 L48 54 Q46 58 42 58 L22 58 Q18 58 16 54 L6 36 Q4 32 6 28 L16 10 Q18 6 22 6 Z" fill="#00DFC0"/>
+              {/* Plus sign */}
+              <rect x="24" y="29" width="16" height="4" rx="1.5" fill="white"/>
+              <rect x="30" y="22" width="4" height="18" rx="1.5" fill="white"/>
+              {/* Wordmark */}
+              <text x="70" y="46" fontFamily="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" fontWeight="800" fontSize="38" letterSpacing="-0.5">
+                <tspan fill="#FFFFFF">Billing</tspan><tspan fill="#00DFC0">Align</tspan>
+              </text>
+            </svg>
           </Link>
 
           {/* Desktop Nav */}
@@ -149,6 +159,9 @@ export function Navbar() {
 
           {/* Desktop Right */}
           <div className="hidden lg:flex items-center gap-3">
+            <Link href="/contact" className="text-[0.875rem] font-medium text-[#94A3B8] hover:text-white transition-colors px-3 py-2">
+              Contact
+            </Link>
             <Link href="/contact#contact-form">
               <Button variant="glow" size="sm" className="text-[0.875rem]">
                 Request a Demo
@@ -190,7 +203,14 @@ export function Navbar() {
               <div className="absolute top-0 right-0 w-40 h-40 bg-teal/5 rounded-full blur-3xl pointer-events-none" />
 
               <div className="flex justify-between items-center p-5 border-b border-white/[0.06]">
-              <Image src="/logo.svg" alt="BillingAlign" width={160} height={36} className="h-7 w-auto" />
+                <svg viewBox="0 0 480 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-7 w-auto">
+                  <path d="M22 6 L42 6 Q46 6 48 10 L58 28 Q60 32 58 36 L48 54 Q46 58 42 58 L22 58 Q18 58 16 54 L6 36 Q4 32 6 28 L16 10 Q18 6 22 6 Z" fill="#00DFC0"/>
+                  <rect x="24" y="29" width="16" height="4" rx="1.5" fill="white"/>
+                  <rect x="30" y="22" width="4" height="18" rx="1.5" fill="white"/>
+                  <text x="70" y="46" fontFamily="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" fontWeight="800" fontSize="38" letterSpacing="-0.5">
+                    <tspan fill="#FFFFFF">Billing</tspan><tspan fill="#00DFC0">Align</tspan>
+                  </text>
+                </svg>
                 <button
                   onClick={() => setMobileOpen(false)}
                   className="p-1.5 rounded-lg text-[#94A3B8] hover:text-white hover:bg-white/[0.06] transition-colors"
@@ -225,6 +245,11 @@ export function Navbar() {
               </div>
 
               <div className="p-4 pt-0 flex flex-col gap-2 border-t border-white/[0.06]">
+                <Link href="/contact" onClick={() => setMobileOpen(false)}>
+                  <Button variant="outline" size="md" className="w-full justify-center">
+                    Contact Us
+                  </Button>
+                </Link>
                 <Link href="/contact#contact-form" onClick={() => setMobileOpen(false)}>
                   <Button variant="glow" size="md" className="w-full justify-center">
                     Request a Demo
